@@ -1,5 +1,7 @@
 const express = require("express")
 const app = express()
+
+/* Si le port process.env existe, utilise-le, sinon utilise le port 3000 */
 const port = process.env.PORT || 3000
 
 const usersRouter = require("./router/users.router")
